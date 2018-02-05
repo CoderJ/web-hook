@@ -13,6 +13,13 @@ app.use(async ctx => {
         path: ctx.path,
         data : ctx.request.body
     };
+    console.log({
+        event,
+        delivery,
+        signature,
+        path: ctx.path,
+        data : ctx.request.body
+    });
 });
 
 app.listen(8000);
