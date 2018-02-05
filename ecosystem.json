@@ -4,6 +4,7 @@
             "name" : "CNN",
             "key" : "cnn",
             "cwd" : "/data/workspace/cet",
+            "secret" : "112233",
             "cmd" : [
                 {
                     "cmd" : "git pull origin release && yarn install && yarn build",
