@@ -1,0 +1,15 @@
+{
+    "apps" : [
+        {
+            "name" : "CNN",
+            "key" : "cnn",
+            "cwd" : "/data/workspace/cet",
+            "cmd" : [
+                {
+                    "cmd" : "git pull origin release && yarn install && yarn build",
+                    "branch" : "release"
+                }
+            ]
+        }
+    ]
+}
