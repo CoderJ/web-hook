@@ -62,6 +62,7 @@ app.use(async ctx => {
     hooks[appKey].cmd.forEach(e => { 
         if (data.ref == `refs/heads/${e.branch}`) { 
             exec(`cd ${hooks[appKey].cwd} && ${e.cmd}`);
+            console.log(`cd ${hooks[appKey].cwd} && ${e.cmd}`);
         }
     })
     ctx.body = {
